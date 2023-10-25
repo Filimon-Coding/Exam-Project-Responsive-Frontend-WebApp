@@ -1,0 +1,60 @@
+.wrapper{
+
+    /* display grid is better than using flex, because it is suitible for a more advanced layout. Source: https://www.w3schools.com/css/css_grid.asp
+    Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 150px 50px 300px 100px 300px;
+    background-color: aqua;
+  
+  /* width and height determines the size of the gridlayout*/
+    width: 70%;
+    height: 1000px;
+
+    /* margin-left and right controls how much space between left or right screen 
+    and the element itself, by putting auto on both sides it will place it in the middle*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*grid1 is used to define the grids space  
+*/
+
+.grid1{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-width: 1px solid rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    font-size: 30px;
+  
+    /* making the element a display flex, results in the text being able to position itself wherever inside the grid box*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .gridnr# and gridoverlinje is used to position the elements inside the grid layout system.*/
+.gridoverlinje{
+    grid-column: 1/4;
+}
+
+.gridnr4{
+    grid-row: 3/5;
+}
+
+
+.gridnr6{
+    grid-row: 3/5;
+    grid-column: 3;
+}
+
+.gridnr8{
+    grid-row: 5/7;
+}
+
+.gridnr10{
+    grid-row: 5/7;
+    grid-column: 3;
+}
+
