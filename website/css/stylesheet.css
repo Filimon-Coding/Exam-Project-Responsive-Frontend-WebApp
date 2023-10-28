@@ -64,10 +64,15 @@
     position:sticky;  
 
 }
-.logo-img {
-    width: 200px;
-    height: auto;
-    position:sticky;
+.navigation a {
+    padding: 40px; 
+    text-decoration: none;
 }
+
+
+.navigation a + a {
+    margin-left: 20px; 
+}
+
 
 
