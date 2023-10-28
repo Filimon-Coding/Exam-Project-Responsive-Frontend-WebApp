@@ -3,7 +3,7 @@
     /* display grid is better than using flex, because it is suitible for a more advanced layout. Source: https://www.w3schools.com/css/css_grid.asp
     Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto auto auto auto auto auto;
     background-color: rgb(239, 243, 243);
   
