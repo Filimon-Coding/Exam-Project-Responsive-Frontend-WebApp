@@ -4,7 +4,7 @@
     Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100px 150px 50px 300px 100px 300px;
+    grid-template-rows: auto auto auto auto auto auto;
     background-color: rgb(239, 243, 243);
   
   /* width and height determines the size of the gridlayout*/
@@ -43,6 +43,7 @@
     grid-row: 3/5;
     width: 100%;
     height: auto;
+    padding-top: 28%;
 
     
 }
