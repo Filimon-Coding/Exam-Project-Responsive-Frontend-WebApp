@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto auto auto auto auto auto;
-    background-color: rgb(239, 243, 243);
+    background-color: rgb(255, 255, 255);
   
   /* width and height determines the size of the gridlayout*/
     width: auto;
@@ -23,7 +23,7 @@
 .grid1{
     background-color: rgba(255, 255, 255, 0.8);
    
-    color: #000;
+    color:black;
     border-width: 1px solid rgba(0, 0, 0, 0.8);
     border-style: solid;
     font-size: 30px;
@@ -38,12 +38,15 @@
 /* .gridnr# and gridoverlinje is used to position the elements inside the grid layout system.*/
 .gridoverlinje{
     grid-column: 1/4;
-    background-color: yellow;
+    background-color:rgba(255,213,0,255);
 }
+
 
 
 .gridnr4{
     grid-row: 2/7;
+    background-color:rgba(255,213,0,255);
+
    /* width: 100%;
     height: auto;
 */
@@ -54,6 +57,8 @@
 .gridnr6{
     grid-row: 2/7;
     grid-column: 3;
+    background-color:rgba(255,213,0,255);
+
 }
 
 .gridnr8{
@@ -67,6 +72,11 @@
 
 /* --------------------------------------- filimon --------------------*/
 /* ---------------------------------------Index --------------------*/
+.logoPlassering img {
+    width: 10%;
+    height: auto;
+
+}
 .navigation {
     position:sticky;  
 
