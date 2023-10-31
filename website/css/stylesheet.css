@@ -4,7 +4,7 @@
     Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: 100px auto auto auto auto auto;
     background-color: rgb(255, 255, 255);
   
   /* width and height determines the size of the gridlayout*/
@@ -17,8 +17,9 @@
     margin-right: auto;
 }
 
-/*grid1 is used to define the grids space  
-*/
+/*grid1 is used to define the grids space..
+Making the element a display flex, results in the text 
+being able to position itself wherever inside the grid box*/
 
 .grid1{
     background-color: rgba(255, 255, 255, 0.8);
@@ -27,8 +28,6 @@
     border-width: 1px solid rgba(0, 0, 0, 0.8);
     border-style: solid;
     font-size: 30px;
-  
-    /* making the element a display flex, results in the text being able to position itself wherever inside the grid box*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +117,12 @@
 }
 
 
-   
+/*------------------------------Accessibility ----------------------------------*/
+.accessibilityimageversion1
+{
+    width: auto;
+    height: 75%;
+}
 
 
 
