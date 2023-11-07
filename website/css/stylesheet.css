@@ -31,7 +31,10 @@ being able to position itself wherever inside the grid box*/
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 
 
 /* .gridnr# and gridoverlinje is used to position the elements inside the grid layout system.*/
@@ -44,7 +47,7 @@ being able to position itself wherever inside the grid box*/
 
 .gridnr4{
     grid-row: 2/7;
-    background-color:rgba(255,213,0,255);
+
 
    /* width: 100%;
     height: auto;
@@ -56,7 +59,7 @@ being able to position itself wherever inside the grid box*/
 .gridnr6{
     grid-row: 2/7;
     grid-column: 3;
-    background-color:rgba(255,213,0,255);
+
 
 }
 
@@ -120,8 +123,11 @@ being able to position itself wherever inside the grid box*/
 /*------------------------------Accessibility ----------------------------------*/
 .accessibilityimageversion1
 {
-    width: auto;
-    height: 75%;
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: left;
 }
 
 
