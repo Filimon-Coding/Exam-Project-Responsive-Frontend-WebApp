@@ -7,6 +7,7 @@ body {
             margin: 0;
             padding: 0;
         }
+
         .overlinje{
             display: grid;
             grid-template-columns: 160px;
@@ -14,15 +15,20 @@ body {
         }
 
         .logo{
-            display:flex;
-            align-items: center;
-            justify-content: center;
+            width: 75%;
+            height: auto;
+            display: flex;
+            align-items: start;
+            justify-content: left;
         }
 
         .venstre{
-            display:flex;
-            align-items: center;
-            justify-content: center;
+            width: 75%;
+            height: auto;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            margin-top: 50%;
         }
 
         .imga{
@@ -50,6 +56,14 @@ body {
             grid-column: 2 ;
             word-wrap: break-word;
         }
+
+        .accessibilityimageversion1 {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    }
 
 
 
