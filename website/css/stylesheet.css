@@ -15,7 +15,7 @@ body {
         }
 
         .logo{
-            width: 75%;
+            width: 100%;
             height: auto;
             display: flex;
             align-items: start;
@@ -23,7 +23,7 @@ body {
         }
 
         .venstre{
-            width: 75%;
+            width: 100%;
             height: auto;
             display: flex;
             align-items: start;
@@ -36,15 +36,13 @@ body {
             max-height: auto;
         }
         
-        footer{
-            background-color: blue ;
-        }
+
 
 
         .wrapper {
             display: grid;
             grid-template-columns: 20% 60% 20%;
-            padding: 10px;
+
         }
 
         .grid {
@@ -63,6 +61,7 @@ body {
             align-items: start;
             justify-content: left;
         }
+
     
 
         /* Style the dropdown container */
@@ -70,73 +69,52 @@ body {
             position: relative;
             display: inline-block;
         }
-
+        
         .dropbtn {
-            background-color: #3498db;
-            color: white;
+            font-size: 25px;
+            background-color: #eaeaea;
+            color: black;
             padding: 10px;
             border: none;
             cursor: pointer;
+            width: 250px;
         }
-
+        
         .dropdown-content {
-            display: none;
+            max-height: 0;
+            overflow: hidden;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            min-width: 250px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             z-index: 1;
+            transition: max-height 1.5s ease; /* Specify the transition duration and easing */
         }
-
+        
         .dropdown-content a {
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-
+        
         .dropdown-content a:hover {
             background-color: #3498db;
             color: white;
         }
-
+        
         .dropdown:hover .dropdown-content {
-            display: block;
+            max-height: 250px; /* Adjust the max-height to fit your content */
         }
 
-        /* Style the dropdown container */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropbtn {
-            background-color: #3498db;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #3498db;
-            color: white;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+        footer {
+            margin-top: 40px;
+            height: 100%;
+            width: 100%;
+            background: #434242;
+            color: #969696;
+            font-size: 13px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+          }
+          
