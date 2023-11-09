@@ -34,7 +34,6 @@ body {
         .imga{
             max-width: 100%;
             max-height: auto;
-
         }
         
         footer{
@@ -58,15 +57,12 @@ body {
         }
 
         .accessibilityimageversion1 {
-    width: 75%;
-    height: auto;
-    display: flex;
-    align-items: start;
-    justify-content: left;
-    }
-
-
-
+            width: 75%;
+            height: auto;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+        }
     
 
         /* Style the dropdown container */
