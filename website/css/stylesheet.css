@@ -1,135 +1,132 @@
-.wrapper{
+body {
+            margin: 0;
+            padding: 0;
+        }
 
-    /* display grid is better than using flex, because it is suitible for a more advanced layout. Source: https://www.w3schools.com/css/css_grid.asp
-    Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100px auto auto auto auto auto;
-    background-color: rgb(255, 255, 255);
-  
-  /* width and height determines the size of the gridlayout*/
-    width: auto;
-    height: 1000px;
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .overlinje{
+            display: grid;
+            grid-template-columns: 160px;
+            background-color: rgb(163, 163, 160);
+        }
 
-    /* margin-left and right controls how much space between left or right screen 
-    and the element itself, by putting auto on both sides it will place it in the middle*/
-    margin-left: auto;
-    margin-right: auto;
-}
+        .logo{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-/*grid1 is used to define the grids space..
-Making the element a display flex, results in the text 
-being able to position itself wherever inside the grid box*/
+        .venstre{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.grid1{
-    background-color: rgba(255, 255, 255, 0.8);
-   
-    color:black;
-    border-width: 1px solid rgba(0, 0, 0, 0.8);
-    border-style: solid;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+        .imga{
+            max-width: 100%;
+            max-height: auto;
 
-
-
-/* .gridnr# and gridoverlinje is used to position the elements inside the grid layout system.*/
-.gridoverlinje{
-    grid-column: 1/4;
-    background-color:rgba(255,213,0,255);
-}
+        }
+        
+        footer{
+            background-color: blue ;
+        }
 
 
+        .wrapper {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            padding: 10px;
+        }
 
-.gridnr4{
-    grid-row: 2/7;
+        .grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            grid-column: 2 ;
+            word-wrap: break-word;
+        }
 
 
-   /* width: 100%;
-    height: auto;
-*/
+
     
-}
 
+        /* Style the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.gridnr6{
-    grid-row: 2/7;
-    grid-column: 3;
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
 
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-}
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.gridnr8{
-    grid-row: 5/7;
-}
+        .dropdown-content a:hover {
+            background-color: #3498db;
+            color: white;
+        }
 
-.gridnr10{
-    grid-row: 5/7;
-    grid-column: 3;
-}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-/* --------------------------------------- filimon --------------------*/
-/* ---------------------------------------Index --------------------*/
-.logoPlassering img {
-    width: 10%;
-    height: auto;
+        /* Style the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-}
-.navigation {
-    position:sticky;  
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
 
-}
-.navigation a {
-    padding: 40px; 
-    text-decoration: none;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.navigation a + a {
-    margin-left: 20px; 
-}
+        .dropdown-content a:hover {
+            background-color: #3498db;
+            color: white;
+        }
 
-
-/* --------------------------- about ---------------------------- */
-.klatre-img1, .makerspace-img2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.klatre-img1 img, .makerspace-img2 img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.Fotograf_title, .image-date {
-    color: red;
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.image-caption {
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-/*------------------------------Accessibility ----------------------------------*/
-.accessibilityimageversion1
-{
-    width: 75%;
-    height: auto;
-    display: flex;
-    align-items: start;
-    justify-content: left;
-}
-
-
-
-
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
