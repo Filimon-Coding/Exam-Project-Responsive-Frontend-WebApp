@@ -17,13 +17,13 @@ body {
     justify-content: left;
 }
 
-.venstre {
+.klarteBilde {
     width: 100%;
     height: auto;
     display: flex;
     align-items: start;
     justify-content: left;
-    margin-top: 50%;
+    margin-top: 64%;
 }
 
 .image {
