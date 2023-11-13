@@ -35,6 +35,7 @@ body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     background-color: rgb(163, 163, 160);
+    word-wrap: break-word;
 }
 
 .grid {
@@ -43,7 +44,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     grid-column: 2;
-    word-wrap: break-word;
+
     margin-left: auto;
     margin-right: auto;
 }
