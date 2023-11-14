@@ -1,14 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(/website/img/slettetter.jpg);
 }
 
 .overlinje {
+    display: grid;
+    grid-template-columns:  25% 50% 25%;
+    grid-template-rows:  130px;
     background-color: rgb(81, 81, 81);
+    place-items: center;
 }
 
-.logo {
-    width: 10%;
+.overlinje img {
+    width: 100%;
     height: auto;
 }
 
@@ -35,25 +40,23 @@ body {
     margin-top: 130%;
 }
 
-.image {
-    max-width: 100%;
-    max-height: auto;
-}
+
 
 .wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    background-color: rgb(163, 163, 160);
+    grid-template-columns:  25% 50% 25%;
     word-wrap: break-word;
 }
 
 .grid {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 50px;
     font-size: 20px;
     line-height: 1.5;
     grid-column: 2;
-
+    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,20 +64,23 @@ body {
 
 
 /*We copied the code from https://www.w3schools.com/howto/howto_css_dropdown.asp 
-to form a dropdown container*/
+to form a dropdown button*/
+
 
 
 
 /* Dropdown Button */
 .dropbtn {
-    font-size: 20px;
+    font-size: 30px;
     background-color: #eaeaea;
     color: black;
     padding: 10px;
     border: 0rem;
     cursor: pointer;
-    max-width: 100%;
+    border-radius: 25px;
+    max-width: fit-content;
     width: 100%;
+    max-width: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -83,29 +89,44 @@ to form a dropdown container*/
     overflow: hidden;
     position: absolute;
     background-color: #eaeaea;
-    min-width: 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: 1.5s ease; 
+    border-radius: 25px;
+
+
+    font-size: 30px;
+    color: black;
+
+
+    margin-top: 5px; /* Adjust the top margin as needed */
+
 }
 
-/* Links inside the dropdown */
+
+/* This edits the text content inside the dropdown */
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    color: black;
+    text-align: center;
 }
 
 
-/* Change color of dropdown links on hover */
+/* This changes the background color, when hovering over said link in the menu. 
+   This is to make it easier for the user to see what link they are going to click on */
 .dropdown-content a:hover {
-    color: blue;
+    background-color: gray;
 }
 
 /* Dropdown Button size on hover */
 .dropdown:hover .dropdown-content {
-    max-height: 250px; 
+    max-height: 300px; 
 }
+
+
+
 
 
 footer {
@@ -133,3 +154,20 @@ footer {
     width: 50%;
     height: auto;
 }
+
+h1{
+    font-size: 50px;
+    background-color: #eaeaea;
+    border-radius: 25px;
+    text-align: center;
+}
+
+h2{
+    text-decoration:underline;
+    border-radius: 25px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

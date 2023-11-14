@@ -10,30 +10,39 @@
 
 <body>
 
-    <div class="overlinje">
-        <img src="img/Logomedsignatur_gul_OsloMet-01_Downsized.png"  class="logo" alt="OSLOMET University Logo">
-    </div>
+    <header class="overlinje">
+        <div>  
+            <nav class="dropdown">
+                <button class="dropbtn">≡ Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Main</a>
+                    <a href="topical.html">Topical</a>
+                    <a href="accessibility.html">Accessibility</a>
+                    <a href="about.html">About</a>
+                    <a href="exercise.html">Exercise</a>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <img src="img/Logomedsignatur_gul_OsloMet-01_Downsized.png" class="logo" alt="OSLOMET University Logo">
+        </div>
+
+        <div>
+            <!-- Empty space as filler for the grid. Fill with wished content -->
+        </div>
+        
+    </header>
 
     <div class="wrapper">
 
-        <body>
-            <div>
-                <div class="dropdown">
-                    <button class="dropbtn">≡ Menu</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Main</a>
-                        <a href="topical.html">Topical</a>
-                        <a href="accessibility.html">Accessibility</a>
-                        <a href="about.html">About</a>
-                        <a href="exercise.html">Exercise</a>
-                    </div>
-                </div>
-                <img class="image" src="img/Venstre side_downsized.jpg" alt="Picture of buildings">
+        <div>
+            <!-- Empty space as filler for the grid. Fill with wished content -->
+        </div>
 
-            </div>
-
-            <main>
-                <div class="grid">
+        <main>
+            <article class="grid">
+                <section>
                     <h1> Accessibility log </h1>
                     <h2> First edition </h2>
 
@@ -47,17 +56,16 @@
                         by taking pictures and documenting what we should improve on. 
                     </p>
 
-                   
-
                     <p>In the first edition, we have established a design for each page. We also have made content for every
                         page.
                         Below is the first version of the "about" page, this is one of our pages we tested:
 
                         <hr>
                         <img class="lighthouseversion1" src="img/accessibility_ver1.jpg" alt="Accessibility test taken with lighthouse">
-                        <hr>
+                        <hr>    
+
                         By analyzing the results, we concluded that there were some things that we had to change. The
-                        design itself did not have a sufficient color contrast, therefore we changed this.
+                        design itself did not have sufficient color contrast, therefore we changed this.
                         When removing the background color on the side of the page, it resulted in better scores on
                         lighthouse.
                         We also seem to get feedback about meta not being included in the page. This is important to
@@ -76,20 +84,29 @@
                     </p>
 
                     <hr>
-                        <img class="waveversion1    " src="img/wavetest_v1.jpg" alt="Men exercising by climbing walls">
+                    <img class="waveversion1" src="img/wavetest_v1.jpg" alt="Men exercising by climbing walls">
                     <hr>
+                </section>
 
-
+                <section>
                     <h2>Final version</h2>
-                </div>
-            </main>
-        </body>
+                </section>
+
+            </article>
+
+        </main>
+
+        <div>
+            <!-- Empty space as filler for the grid. Fill with wished content -->      
+        </div>
+    </div>
+
     </div>
 
     <footer>
-        <p>SKRIV HER</p>
-        <p>SKRIV HER</p>
-        <p>SKRIV HER</p>
+        <p>Oslomet Student </p>
+        <p>Contact us at </p>
+        <p>Oslomet Pilestredet P35 </p>
     </footer>
 
 </body>
