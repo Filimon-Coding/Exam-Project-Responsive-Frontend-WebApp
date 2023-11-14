@@ -7,13 +7,15 @@ body {
 .overlinje {
     display: grid;
     grid-template-columns:  25% 50% 25%;
-    grid-template-rows:  130px;
+    grid-template-rows:  13vh;
     background-color: rgb(81, 81, 81);
     place-items: center;
 }
 
 .overlinje img {
-    width: 100%;
+    max-width: 100vw;
+    max-height: 10vh;
+    width: auto;
     height: auto;
 }
 
@@ -26,12 +28,16 @@ body {
     margin-top: 35%;
 }
 
+
+
+
+
 .image {
     max-width: 100%;
     max-height: auto;
 }
 
-.klarteBilde1 {
+.lasercutting {
     width: 100%;
     height: auto;
     display: flex;
@@ -40,27 +46,46 @@ body {
     margin-top: 130%;
 }
 
-
+@media (max-width: 768px) {
+    .klarteBilde, .lasercutting{
+        display: block;
+        width: 20%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+}
 
 .wrapper {
     margin-top: 10px;
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns:  25% 50% 25%;
+    grid-template-columns: 25% 50% 25%;
     word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Adjust as needed for smaller screens */
+    }
 }
 
 .grid {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 1.5;
-    grid-column: 2;
     border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /* Center the grid */
 }
 
+@media (max-width: 768px) {
+    .grid {
+        padding: 20px;
+        font-size: 2vw;
+    }
+}
 
 
 /*We copied the code from https://www.w3schools.com/howto/howto_css_dropdown.asp 
@@ -71,7 +96,7 @@ to form a dropdown button*/
 
 /* Dropdown Button */
 .dropbtn {
-    font-size: 30px;
+    font-size: 2vw;
     background-color: #eaeaea;
     color: black;
     padding: 10px;
@@ -95,7 +120,7 @@ to form a dropdown button*/
     border-radius: 25px;
 
 
-    font-size: 30px;
+    font-size: 2vw;
     color: black;
 
 
@@ -156,13 +181,14 @@ footer {
 }
 
 h1{
-    font-size: 50px;
+    font-size: 2vw;
     background-color: #eaeaea;
     border-radius: 25px;
     text-align: center;
 }
 
 h2{
+    font-size: 1.5vw;
     text-decoration:underline;
     border-radius: 25px;
     max-width: fit-content;
