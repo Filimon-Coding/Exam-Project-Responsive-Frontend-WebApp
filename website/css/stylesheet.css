@@ -147,7 +147,7 @@ to form a dropdown button*/
 
 /* Dropdown Button size on hover */
 .dropdown:hover .dropdown-content {
-    max-height: 300px; 
+    max-height: 350px; 
 }
 
 
