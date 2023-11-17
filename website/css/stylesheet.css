@@ -3,13 +3,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/website/img/slettetter.jpg);
+    background-image: url(/website/img/background-image.jpg); /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
 }
 
 
 /* use this to source an image*/
 .sources{
-    font-size: 10px;    
+    font-size: 0.7vw;    
 }
 
 
@@ -54,6 +54,9 @@ h2{
     margin-right: auto;
 }
 
+a{
+    background-color: white;
+}
 
 .image {
     max-width: 100%;
