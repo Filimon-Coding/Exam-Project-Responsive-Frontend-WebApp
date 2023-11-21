@@ -35,7 +35,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: left;
-    margin-top: 35%;
+    margin-top: 38%;
 }
 
 /* De største overskriftene vi har på sidene */
@@ -72,7 +72,7 @@ a{
     display: flex;
     align-items: start;
     justify-content: right;
-    margin-top: 130%;
+    margin-top: 95%;
 }
 
 
@@ -175,7 +175,7 @@ to form a dropdown button, however we also implemented some things for the sake 
 
 /* How far the dropdown content background is going to go */
 .dropdown:hover .dropdown-content {
-    max-height: 350px; 
+    max-height: 500px; 
 }
 
 
@@ -207,7 +207,11 @@ footer {
     height: auto;
 }
 
-
+/*main */
+.P35 {
+     width: 100%;
+     height: auto; 
+}
 
 /* Topical */
 
@@ -217,6 +221,7 @@ footer {
     height: 32%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 /* Main */
