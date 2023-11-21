@@ -3,7 +3,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/website/img/background-image.jpg); /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
+    background-image: url(/website/img/background-image.jpg); 
+        /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
+    width: 100%;
+    height: auto;
 }
 
 
@@ -23,7 +26,7 @@ body {
 /*
 .overlinje img {
     max-width: 100vw;
-    max-height: 10vh;
+    max-height: auto;
     width: auto;
     height: auto;
 }
@@ -41,7 +44,8 @@ body {
 /* De største overskriftene vi har på sidene */
 h1{
     font-size: 2vw;
-    background-color: rgba(234,234,234);
+    background-image: url(/website/img/background-image.jpg);
+            /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
     border-radius: 25px;
     text-align: center;
 }
@@ -80,7 +84,7 @@ a{
 If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
 We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php, but most styles is from us */
 @media (max-width: 768px) {
-    .klarteBilde, .lasercutting{
+    img{
         display: block;
         width: 20%;
         height: auto;
@@ -122,8 +126,6 @@ We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php
         font-size: 2vw;
     }
 }
-
-
 
 
 /*We copied the code from https://www.w3schools.com/howto/howto_css_dropdown.asp 
@@ -198,15 +200,19 @@ footer {
 
 /* Picture of lighthouse test */
 .lighthouseversion1 {
-    width: 65%;
+    width: 100%;
     height: auto;
 }
 
 .waveversion1 {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
+.finaltest {
+    width: 100%;
+    height: auto;
+}
 /*main */
 .P35 {
      width: 100%;
