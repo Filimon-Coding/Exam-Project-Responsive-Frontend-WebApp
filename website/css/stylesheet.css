@@ -12,7 +12,7 @@ body {
     font-size: 0.7vw;    
 }
 
-
+/* Grid av mørk grå boks */
 .overlinje {
     display: grid;
     grid-template-columns:  25% 50% 25%;
@@ -20,7 +20,7 @@ body {
     background-color: rgb(81, 81, 81);
     place-items: center;
 }
-
+/*
 .overlinje img {
     max-width: 100vw;
     max-height: 10vh;
@@ -28,6 +28,7 @@ body {
     height: auto;
 }
 
+/* bilde av folkene som klatrer */
 .klarteBilde {
     width: 100%;
     height: auto;
@@ -37,14 +38,14 @@ body {
     margin-top: 35%;
 }
 
-
+/* De største overskriftene vi har på sidene */
 h1{
     font-size: 2vw;
     background-color: rgba(234,234,234);
     border-radius: 25px;
     text-align: center;
 }
-
+/* De nest-største overskriftene vi har på sidene */
 h2{
     font-size: 1.5vw;
     text-decoration:underline;
@@ -54,15 +55,17 @@ h2{
     margin-right: auto;
 }
 
+/* Alle linker til de forskjellige filene innad i prosjektet og andre websider */
 a{
-    background-color: white;
+    color: blue ;
+    text-decoration: none;
 }
 
 .image {
     max-width: 100%;
     max-height: auto;
 }
-
+/* Bilde av trekista og laserkutting skiltet */
 .lasercutting {
     width: 100%;
     height: auto;
@@ -177,7 +180,7 @@ to form a dropdown button, however we also implemented some things for the sake 
 
 
 
-
+/* The dark long rectangle at the bottom of the page */
 footer {
     height: 100%;
     width: 100%;
@@ -193,7 +196,7 @@ footer {
 
 /* Accessibility */
 
-
+/* Picture of lighthouse test */
 .lighthouseversion1 {
     width: 65%;
     height: auto;
@@ -216,3 +219,8 @@ footer {
     margin-right: auto;
 }
 
+/* Main */
+
+.Front-Uni{
+    width: 100% ;
+}
