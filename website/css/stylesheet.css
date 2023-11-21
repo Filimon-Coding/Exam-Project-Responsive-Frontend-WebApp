@@ -81,7 +81,7 @@ a{
 If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
 We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php, but most styles is from us */
 @media (max-width: 768px) {
-    .klarteBilde, .lasercutting{
+    img{
         display: block;
         width: 20%;
         height: auto;
@@ -197,15 +197,19 @@ footer {
 
 
 .lighthouseversion1 {
-    width: 65%;
+    width: 100%;
     height: auto;
 }
 
 .waveversion1 {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
+.finaltest {
+    width: 100%;
+    height: auto;
+}
 /*main */
 .P35 {
      width: 100%;
