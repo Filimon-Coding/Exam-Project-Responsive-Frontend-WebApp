@@ -172,7 +172,7 @@ to form a dropdown button, however we also implemented some things for the sake 
 
 /* How far the dropdown content background is going to go */
 .dropdown:hover .dropdown-content {
-    max-height: 350px; 
+    max-height: 500px; 
 }
 
 
