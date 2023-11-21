@@ -15,7 +15,14 @@ body {
     font-size: 0.7vw;    
 }
 
-/* This gives the header a grid with set column and row size, backgrouncolor, and centers it */
+/*Makes the source texts bigger when on smaller screen */
+@media (max-width: 768px) {
+    .sources{
+        font-size: 2vw;
+    }
+}
+
+/* This gives the header a grid with set column and row size, backgroundcolor, and centers every content inside header  */
 .headergrid {
     display: grid;
     grid-template-columns:  25% 50% 25%;
@@ -26,12 +33,11 @@ body {
 
 /* Every image inside headergrid has these styles */
 .headergrid img {
-    max-width: 100vw;
-    max-height: auto;
-    width: auto;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
+    width: auto;
 }
-
 
 /* The biggest header titles(heading level 1) gets changed with this selector */
 h1{
@@ -180,7 +186,6 @@ footer {
 }
 
 
-
 /* Accessibility */
 
 /* Picture of first lighthouse test */
@@ -241,3 +246,4 @@ footer {
     margin-top: 95%;
 }
 
+/* Exercise*/
