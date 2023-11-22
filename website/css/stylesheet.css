@@ -1,60 +1,340 @@
-.wrapper{
 
-    /* display grid is better than using flex, because it is suitible for a more advanced layout. Source: https://www.w3schools.com/css/css_grid.asp
-    Grid-template-column defines how much each collumn space should take, three collumns: left 20%, middle 60% and right 20% space.*/
+/* for all pages, sets the background as a picture */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/website/img/background-image.jpg); /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* This is used to source an image and attribute photographers, 
+using vw(viewport width) as a viewport dependent dynamic sizing 
+unit which acts in accordance with current browser width*/
+.sources{
+    font-size: 0.7vw;    
+}
+
+
+
+/* This gives the header a grid with set column and row size, backgroundcolor, and centers every content inside header  */
+.headergrid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100px 150px 50px 300px 100px 300px;
-    background-color: aqua;
-  
-  /* width and height determines the size of the gridlayout*/
-    width: 70%;
-    height: 1000px;
+    grid-template-columns:  25% 50% 25%;
+    grid-template-rows:  13vh;
+    background-color: rgb(81, 81, 81);
+    place-items: center;
+}
 
-    /* margin-left and right controls how much space between left or right screen 
-    and the element itself, by putting auto on both sides it will place it in the middle*/
+/* Every image inside headergrid has these styles, styling the Oslomet logo */
+.headergrid img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* The biggest header titles(heading level 1) gets changed with this selector 
+this selector uses the dynamic sizing unit viewport width*/
+h1{
+    font-size: 2vw;
+    background-image: url(/website/img/background-image.jpg);
+            /* Image by ChrisFiedler from Pixabay URL: https://pixabay.com/photos/paper-old-texture-parchment-1074131 */
+    border-radius: 25px;
+    text-align: center;
+}
+/* The second header titles(heading level 2) gets changed with this selector
+using the dynamic sizing unit viewport width */
+h2{
+    font-size: 1.5vw;
+    text-decoration: underline;   
+    max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*grid1 is used to define the grids space  
-*/
+/* All links to the different files inside the project and other websites,
+text is blue and link underline is removed */
+a{
+    color: blue ;
+    text-decoration: none;
+}
 
-.grid1{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
-    border-width: 1px solid rgba(0, 0, 0, 0.8);
-    border-style: solid;
-    font-size: 30px;
-  
-    /* making the element a display flex, results in the text being able to position itself wherever inside the grid box*/
+
+/* Makes a grid in the main section*/
+.wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+   /* word-wrap: break-word; */
+}
+
+
+
+/* Makes a grid inside the article*/
+.grid {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    font-size: 1vw;
+    line-height: 1.5;
+    border-radius: 25px;
+    margin-top: 0 auto; /* Center the grid */
+    margin-bottom: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+
+
+
+/*We copied the dropdown button code from https://www.w3schools.com/howto/howto_css_dropdown.asp 
+to form a dropdown button, however we also implemented some things for the sake of design*/
+
+/* Dropdown Button, again using the dynamic viewport width sizing unit */
+.dropbtn {
+    font-size: 2vw;
+    background-color: rgba(234,234,234);
+    color: black;
+    padding: 10px;
+    border: 0rem;
+    cursor: pointer;
+    border-radius: 25px;
+    max-width: fit-content;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(234,234,234);
+    transition: 1s ease; 
+    border-radius: 25px;
+    font-size: 2vw;
+    color: black;
+    margin-top: 5px; 
+}
+
+
+/* This edits the text content inside the dropdown, changes color and removes underline */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+
+/* This changes the background color, when hovering over a link in the menu. 
+   This is to make it easier for the user to see what link they are going to click on */
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+/* Code specifying how far the dropdown content background is going to go */
+.dropdown:hover .dropdown-content {
+    max-height: 500px; 
+}
+
+
+
+/* The dark long rectangle at the bottom of the page */
+footer {
+    height: 100%;
+    width: 100%;
+    background: rgb(67,66,66);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+/* Accessibility */
+
+/* Picture of first lighthouse test */
+.lighthouseversion1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Picture of wave test*/
+.waveversion1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Picture of final lighthouse test */
+.finaltest {
+    width: 100%;
+    height: auto;
+}
+
+/*Main Page*/
+
+.p35-picture {
+     width: 100%;
+     height: auto; 
+}
+
+/* Topical */
+
+/* styling for all pictures on the topical page */
+
+.topical-page-picture{
+    display: block;
+    width: 100%;
+    height: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* About */
+
+/* Picture on the left side on page about.html */
+.climbing-picture {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    margin-top: 38%;
+}
+
+/* Styles for the picture of the wooden chest and lasercutting */
+.lasercutting {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    margin-top: 95%;
+}
+
+
+
+/* @media is used to make the websites more accessible for smaller devices. 
+If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
+We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php, but most styles is from us */
+
+
+/*media query is placed at the bottom as best practice*/
+@media (max-width: 768px) {
+           /*Makes the source texts bigger when on smaller screen */
+        .sources{
+            font-size: 1.5vw;
+        }
+    /* Makes images smaller for smaller devices*/
+    img{
+        display: block;
+        width: 20%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    /*Makes everything wrapped in main smaller for smaller devices */
+
+    .wrapper {
+        grid-template-columns: 5% 1fr 5%; 
+    }
+
+    /*Makes everything wrapped in grid smaller for smaller devices */
+
+    .grid {
+        padding: 20px;
+        font-size: 2vw;
+    }
+}
+    
+/* Exercise */ 
+
+
+.googlemaps {
+    width: 500px;
+    height: 450px; 
+    border: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-/* .gridnr# and gridoverlinje is used to position the elements inside the grid layout system.*/
-.gridoverlinje{
-    grid-column: 1/4;
-}
-
-.gridnr4{
-    grid-row: 3/5;
-}
+* {
+    box-sizing: border-box;
+  }
 
 
-.gridnr6{
-    grid-row: 3/5;
-    grid-column: 3;
-}
-
-.gridnr8{
-    grid-row: 5/7;
-}
-
-.gridnr10{
-    grid-row: 5/7;
-    grid-column: 3;
-}
-
+  .tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #1abc9c;
+    height: 14.75rem;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #1abc9c;
+    border-right: 0.125rem solid #16a085;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    height: 12rem;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }

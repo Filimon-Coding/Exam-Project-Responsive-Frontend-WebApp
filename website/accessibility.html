@@ -1,1 +1,125 @@
-accessibility
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link type="text/css" href="css/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="headergrid">
+        <div>  
+            <nav class="dropdown">
+                <button class="dropbtn">≡ Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Main</a>
+                    <a href="topical.html">Topical</a>
+                    <a href="accessibility.html">Accessibility</a>
+                    <a href="about.html">About</a>
+                    <a href="exercise.html">Exercise</a>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <img src="img/logowithsignature_yellow_OsloMet.png" class="logo" alt="OSLOMET University Logo">
+        </div>
+
+        <div>
+            <!-- Right side of header. Empty space as filler for the grid. Fill with wished content -->
+        </div>
+        
+    </header>
+
+    <div class="wrapper">
+
+        <div>
+            <!-- Left side of page. Empty space as filler for the grid. Fill with wished content -->
+        </div>
+
+        <main>
+            <article class="grid">
+                <section>
+                    <h1> Accessibility log </h1>
+                    <h2> First edition </h2>
+
+                    <p> In this page, we will talk about accessibility and how we can utilize tools like lighthouse and WAVE to make
+                        our page better.
+                        Our process consists of making a page. Afterwards, test the page with WAVE and lighthouse tool. We document
+                        and log the feedback results which we get from the lighthouse and the WAVE tool.
+                        Then we improve our pages on the website by learning and documenting from using the lighthouse tool.
+                        Hence why we use the title "Accessibility log". 
+                    </p>
+
+                    <p>In the first edition, we have established a design for each page. We also have made content for every
+                        page.
+                        Below is the first version of the "about" page, this is one of our pages we tested:
+                     </p>
+                        <hr>
+                        <img src="img/accessibilityscore_ver1.jpg" alt="Score of accessibility test">
+                        <img class="lighthouseversion1" src="img/accessibility_ver1.jpg" alt="Accessibility test taken with lighthouse">
+                        <hr>    
+                    <p> By analyzing the results, we concluded that there were some things that we had to change. The
+                        design itself did not have sufficient color contrast, therefore we changed this.
+                        When removing the background color on the side of the page, it resulted in better scores on
+                        lighthouse.
+                        We also seem to get feedback about meta not being included in the page. This is important to
+                        include because this allows us to fit the content according to the user's device.
+                    </p>
+                    
+                    <p> There were also feedback revolving around image size and properly sized images. The file size of the pictures were 
+                        too big for the website itself, therefore it took too long to load in the pages. By changing pictures from PNG formats
+                        to JPEG it will make the image file size smaller. In addition, we also changed the resolution on some images. 
+                        Some of the images were very big as the original size, we had to downsize them by making the resolution smaller.
+                        This resulted in faster loading times.  
+                    </p>
+                        
+                    <p> Alternate text on images was something that were missed at the start. By doing a WAVE test, we could pinpoint which image
+                        that did not have an alternate text. 
+                    </p>
+
+                    <hr>
+                    <img class="waveversion1" src="img/wavetest_v1.jpg" alt="Men exercising by climbing walls">
+                    <hr>
+                </section>
+
+                <section>
+                    <h2>Final version</h2>
+                    <p>When testing the final version with lighthouse, we could say that we are content with our websites. 
+                        The results came in, and we got 100 score troughout the test. This shows us that our website is 
+                        well functioned. By improving with lighthouse feedback, we can be even more sure that our website has high quality 
+                        when it comes to performance, accessibility and best practice. It is also important to note that by making the website
+                        have faster loading times, we contribute to less data being uploaded, therefore more cost-efficientl and requires 
+                        less upload/download speed.
+                    </p>
+                    <hr>
+                    <img class="finaltest" src="img/accessiblitytest_finalversion.jpg" alt="Final test of accessibility score">
+                    <hr>
+                    <p>By analyzing the picture above, we can safely say that most issues have been resolved. However, there are two 
+                        issues still maintaining. These issues were something we tried to fix, but the issues still did not get removed.
+                        We deemed theese issues as something that cannot be resolved, a bug.</p>
+                </section>
+
+            </article>
+
+        </main>
+
+        <div>
+            <!-- Right side of page. Empty space as filler for the grid. Fill with wished content -->      
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>Oslomet Student </p>
+        <p>Contact us </p>
+        <p>Oslomet Pilestredet P35 </p>
+    </footer>
+
+</body>
+
+</html>
