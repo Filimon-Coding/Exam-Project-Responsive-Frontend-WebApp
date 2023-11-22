@@ -63,11 +63,6 @@ a{
 }
 
 
-
-
-
-
-
 /* Makes a grid in the main section*/
 .wrapper {
     margin-top: 10px;
@@ -224,7 +219,7 @@ footer {
     margin-top: 95%;
 }
 
-/* Exercise*/
+
 
 /* @media is used to make the websites more accessible for smaller devices. 
 If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
@@ -261,3 +256,85 @@ We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php
     }
 }
     
+/* Exercise */ 
+
+
+.googlemaps {
+    width: 500px;
+    height: 450px; 
+    border: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  .tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #1abc9c;
+    height: 14.75rem;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #1abc9c;
+    border-right: 0.125rem solid #16a085;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    height: 12rem;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
