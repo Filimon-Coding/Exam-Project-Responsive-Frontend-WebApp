@@ -17,6 +17,13 @@ unit which acts in accordance with current browser width*/
     font-size: 0.7vw;    
 }
 
+/*Class to style the logo which are on all pages */
+.logo{
+    font-size: 3vw;
+    color: rgb(255, 211, 53);
+
+}
+
 
 
 /* This gives the header a grid with set column and row size, backgroundcolor, and centers every content inside header  */
@@ -221,41 +228,7 @@ footer {
 
 
 
-/* @media is used to make the websites more accessible for smaller devices. 
-If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
-We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php, but most styles is from us */
 
-
-/*media query is placed at the bottom as best practice*/
-@media (max-width: 768px) {
-           /*Makes the source texts bigger when on smaller screen */
-        .sources{
-            font-size: 1.5vw;
-        }
-    /* Makes images smaller for smaller devices*/
-    img{
-        display: block;
-        width: 20%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-    }
-
-    /*Makes everything wrapped in main smaller for smaller devices */
-
-    .wrapper {
-        grid-template-columns: 5% 1fr 5%; 
-    }
-
-    /*Makes everything wrapped in grid smaller for smaller devices */
-
-    .grid {
-        padding: 20px;
-        font-size: 2vw;
-    }
-}
-    
 /* Exercise */ 
 
 
@@ -338,3 +311,60 @@ We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php
     opacity: 1;
     transition: all 0.35s;
   }
+
+  /* @media is used to make the websites more accessible for smaller devices. 
+If the media(device) goes under 768pixels in resolution, it will change the set class to the styles written inside {}.
+We copied some code from https://www.w3schools.com/cssref/css3_pr_mediaquery.php, but most styles is from us */
+
+
+/*media query is placed at the bottom as best practice*/
+@media (max-width: 768px) {
+    /*Makes the source texts bigger when on smaller screen */
+ .sources{
+     font-size: 1.5vw;
+ }
+/* Makes images smaller for smaller devices*/
+img{
+ display: block;
+ width: 20%;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 0;
+}
+
+/*Makes everything wrapped in main smaller for smaller devices */
+
+.wrapper {
+ grid-template-columns: 5% 1fr 5%; 
+}
+
+/*Makes everything wrapped in grid smaller for smaller devices */
+
+.grid {
+ padding: 20px;
+ font-size: 2vw;
+}
+
+.headergrid{
+    grid-template-rows:  66px;
+}
+}
+
+/* These two media queries are for resizign the headergrid 
+and the logo according with how the user resizes their window/ their screen size*/
+@media (max-height: 500px) {
+    .logo{
+        font-size: 2.25vw;
+    }
+    .headergrid{
+        grid-template-rows:  86px;
+    }
+
+}
+
+@media (max-height: 500px) and (max-width: 768px) {
+    .headergrid{
+        grid-template-rows:  50px;
+    }
+}
